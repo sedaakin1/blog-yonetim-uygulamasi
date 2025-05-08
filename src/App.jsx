@@ -1,11 +1,13 @@
 import React from "react";
-import BlogList from "./components/BlogList/BlogList";
+// import BlogList from "./components/BlogList/BlogList";
+import AddNewBlog from "./components/BlogList/AddNewBlog";
 
 function App() {
  
   return (
     <div>
-      <BlogList/>
+      <AddNewBlog />
+      {/* <BlogList/> */}
     </div>
   )
 }
