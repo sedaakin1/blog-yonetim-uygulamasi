@@ -1,0 +1,41 @@
+.add-product-form {
+  background-color: #fff;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-input label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.blog-input input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.2s ease;
+}
+
+.blog-input input:focus {
+  outline: none;
+  border-color: #4caf50;
+  background-color: #fff;
+}
+
+button {
+  align-self: flex-end;
+}

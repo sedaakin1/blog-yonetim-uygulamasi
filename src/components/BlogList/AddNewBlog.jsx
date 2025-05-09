@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import BlogInput from './BlogInput';
-import Button from "../UI/Button"
+import Button from "../UI/Button";
+import "./AddNewBlog.css"
 
 const blogInputs = [
   {
@@ -66,7 +67,7 @@ const AddNewBlog = ({setBlog}) => {
       value={newBlog[input.name]} 
       handleChange={handleChange}/>
     ))}
-    <Button color="success">Yeni Blog Ekle</Button>
+    <Button color="success">Add Post</Button>
     </form>
   )
 }
