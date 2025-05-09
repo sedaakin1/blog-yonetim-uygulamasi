@@ -6,9 +6,7 @@ function BlogItem(props){
 
     return (
         <div>
-        <div>
-            <h1>Blog Posts</h1> 
-        </div>    
+          
         <div className='blog-item'>
             <h2 className='blog-title'>{title}</h2>
             <p className='blog-author'>By: {author}</p>

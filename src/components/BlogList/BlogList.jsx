@@ -1,11 +1,15 @@
 import React from 'react';
-import {blogData} from "../../data/blogData";
+// import {blogData} from "../../data/blogData";
 import BlogItem from './BlogItem';
+import "./BlogList.css"
 
-function BlogList() {
+function BlogList({blogs}) {
   return (
     <div className='blog-list'>
-      {blogData.map((blog) =>
+    
+       <h1>Blog Posts</h1> 
+  
+      {blogs.map((blog) =>
       <BlogItem 
        key={blog.id}
        title={blog.title}

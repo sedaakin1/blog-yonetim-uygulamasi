@@ -1,23 +1,22 @@
 import React, {useState} from 'react'
+import BlogInput from './BlogInput';
+import Button from "../UI/Button"
 
 const blogInputs = [
   {
     label: "Title",
     type: "text",
     name: "title",
-    placeholder: "Lütfen title giriniz"
   },
   {
     label: "Author",
     type: "text",
     name: "author",
-  placeholder: "Lütfen yazar adı giriniz"
   },
   {
     label: "Content",
     type:  "text",
     name: "content",
-    placeholder: "Lütfen içerik kısmını doldurunuz"
   },
 ];
 
@@ -35,25 +34,40 @@ const AddNewBlog = ({setBlog}) => {
   function handleSubmit(event){
     event.preventDefault();
 
-    const isFormValid = Object.values(newBlog).every(
-      (value)=> value.trim() !== ""
-    );
-
-    if (!isFormValid) {
-      alert("Lütfen tüm alanları doldurunuz");
-      return;
+    for (const input of blogInputs) {
+      if (!newBlog[input.name].trim()) {
+        alert(`${input.label} alanı boş bırakılamaz!`);
+        return;
+      }
     }
 
-    const updateNewBlog = {
-      
-    }
 
+    const updatedBlog = {
+      id: Math.random(),
+      title: newBlog.title,
+      author: newBlog.author,
+      content: newBlog.content,
+    };
+
+    setBlog((prevState) => [updatedBlog, ...prevState]);
+
+    setNewBlog({
+      title: "",
+      author: "",
+      content: "",
+    });
   }
 
-
-
   return (
-    <div>AddNewBlog</div>
+    <form className='add-product-form' 
+    onSubmit={handleSubmit}>
+    {blogInputs.map((input,index) =>(
+      <BlogInput key={index} {...input}
+      value={newBlog[input.name]} 
+      handleChange={handleChange}/>
+    ))}
+    <Button color="success">Yeni Blog Ekle</Button>
+    </form>
   )
 }
 
