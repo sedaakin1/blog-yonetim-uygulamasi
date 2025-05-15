@@ -29,3 +29,22 @@ body {
   max-width: 600px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
+
+.blog-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.blog-controls input,
+.blog-controls select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+  max-width: 280px;
+}

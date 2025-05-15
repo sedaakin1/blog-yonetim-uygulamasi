@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab); 
+  background: linear-gradient(to right, #eef2f3, #8e9eab); 
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+
+.app-container {
+  max-width: 1100px;
+  margin: 30px auto;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+
+/* BlogList stilleri */
+.blog-list {
+  flex: 2;
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  min-width: 400px;
+  max-width: 700px; 
+  width: 100%;       
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.blog-list h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* AddNewBlog form container */
+.add-product-form {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  min-width: 280px;
+  max-width: 400px; 
+}
+
+/* BlogInput container */
+.blog-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.blog-input label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.blog-input input {
+  padding: 8px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline-color: #8e9eab;
+  transition: border-color 0.3s ease;
+}
+
+.blog-input input:focus {
+  border-color: #6b7c93;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  background-color: #4c77af;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #165476;
+}

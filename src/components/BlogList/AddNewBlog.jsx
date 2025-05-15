@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import  {useState} from 'react'
 import BlogInput from './BlogInput';
 import Button from "../UI/Button";
 import "./AddNewBlog.css"
@@ -19,6 +19,11 @@ const blogInputs = [
     type:  "text",
     name: "content",
   },
+  {
+    label: "Date",
+    type: "date",
+    name: "date",
+  }
 ];
 
 const AddNewBlog = ({setBlog}) => {
@@ -26,6 +31,7 @@ const AddNewBlog = ({setBlog}) => {
     title:"",
     author:"",
     content:"",
+    date:"",
   });
 
   function handleChange({target: {name, value}}){
@@ -48,6 +54,7 @@ const AddNewBlog = ({setBlog}) => {
       title: newBlog.title,
       author: newBlog.author,
       content: newBlog.content,
+      date: newBlog.date,
     };
 
     setBlog((prevState) => [updatedBlog, ...prevState]);
@@ -56,6 +63,7 @@ const AddNewBlog = ({setBlog}) => {
       title: "",
       author: "",
       content: "",
+      date:"",
     });
   }
 

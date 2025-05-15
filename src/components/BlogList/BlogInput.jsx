@@ -1,5 +1,3 @@
-import React from "react";
-
 
 const BlogInput = ({ label, type, name, value, handleChange }) => {
   return (
