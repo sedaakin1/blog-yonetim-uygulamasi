@@ -31,8 +31,8 @@ function BlogList({ blogs }) {
     });
 
   return (
-    <div className='blog-list'>
-      <div className='blog-controls'>
+    <div className='blog-wrapper'>
+    <div className='blog-controls'>
         <input
           type="text"
           placeholder="Search Blogs..."
@@ -45,7 +45,7 @@ function BlogList({ blogs }) {
           <option value="author">Author</option>
         </select>
       </div>
-
+    <div className='blog-list'>
       <h1 className='blog-title-main'>Blog Posts</h1>
 
       {filteredBlogs.map((blog) => (
@@ -54,8 +54,11 @@ function BlogList({ blogs }) {
           title={blog.title}
           description={blog.description || blog.content}
           author={blog.author}
+          date={blog.date}
+          image={blog.image}
         />
       ))}
+    </div>
     </div>
   );
 }

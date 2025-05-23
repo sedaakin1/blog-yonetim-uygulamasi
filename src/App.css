@@ -20,7 +20,19 @@ body {
   box-sizing: border-box;
 }
 
-
+.app-header {
+  color: white;
+  background-color: #165476;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
 /* BlogList stilleri */
 .blog-list {
@@ -95,3 +107,4 @@ button {
 button:hover {
   background-color: #165476;
 }
+

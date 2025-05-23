@@ -23,7 +23,7 @@ const blogInputs = [
     label: "Date",
     type: "date",
     name: "date",
-  }
+  },
 ];
 
 const AddNewBlog = ({setBlog}) => {
@@ -32,29 +32,35 @@ const AddNewBlog = ({setBlog}) => {
     author:"",
     content:"",
     date:"",
+    image: null,
   });
 
-  function handleChange({target: {name, value}}){
-    setNewBlog({...newBlog, [name]: value});
+  function handleChange({ target: { name, value, files, type } }) {
+  if (type === "file") {
+    setNewBlog({ ...newBlog, [name]: files[0] });
+  } else {
+    setNewBlog({ ...newBlog, [name]: value });
   }
+}
 
   function handleSubmit(event){
     event.preventDefault();
 
     for (const input of blogInputs) {
-      if (!newBlog[input.name].trim()) {
-        alert(`${input.label} alanı boş bırakılamaz!`);
-        return;
-      }
-    }
+  if (!newBlog[input.name].trim()) {
+    alert(`${input.label} alanı boş bırakılamaz!`);
+    return;
+  }
+}
 
 
     const updatedBlog = {
       id: Math.random(),
-      title: newBlog.title,
-      author: newBlog.author,
-      content: newBlog.content,
-      date: newBlog.date,
+      title: newBlog.title.trim(),
+      author: newBlog.author.trim(),
+      content: newBlog.content.trim(),
+      date: newBlog.date.trim(),
+      image: newBlog.image ? URL.createObjectURL(newBlog.image) : null,
     };
 
     setBlog((prevState) => [updatedBlog, ...prevState]);
@@ -64,17 +70,30 @@ const AddNewBlog = ({setBlog}) => {
       author: "",
       content: "",
       date:"",
+      image: null,
     });
   }
 
   return (
-    <form className='add-product-form' 
-    onSubmit={handleSubmit}>
+    <form className='add-product-form' onSubmit={handleSubmit}>
     {blogInputs.map((input,index) =>(
-      <BlogInput key={index} {...input}
+      <BlogInput 
+      key={index} {...input}
       value={newBlog[input.name]} 
-      handleChange={handleChange}/>
+      handleChange={handleChange}
+      />
     ))}
+    <div className="blog-input">
+    <label>Image</label>
+    <input
+      type="file"
+      name="image"
+      accept="image/*"
+      onChange={handleChange}
+    />
+  </div>
+    
+    
     <Button color="success">Add Post</Button>
     </form>
   )

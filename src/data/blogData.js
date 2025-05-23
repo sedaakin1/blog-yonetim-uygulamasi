@@ -7,7 +7,8 @@ export const blogData = [
     "category": "men's clothing",
     "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
     "rating": { "rate": 3.9, "count": 120 },
-    "author": "Liam Anderson"
+    "author": "Liam Anderson",
+    "date": "2025-05-19"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@ export const blogData = [
     "category": "men's clothing",
     "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
     "rating": { "rate": 4.1, "count": 259 },
-    "author": "Sophia Müller"
+    "author": "Sophia Müller",
+    "date": "2025-05-18"
   },
   {
     "id": 3,
@@ -27,7 +29,9 @@ export const blogData = [
     "category": "men's clothing",
     "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
     "rating": { "rate": 4.7, "count": 500 },
-    "author": "Isabella Rossi"
+    "author": "Isabella Rossi",
+    "date": "2025-05-17"
+    
   },
   {
     "id": 4,
@@ -37,7 +41,8 @@ export const blogData = [
     "category": "men's clothing",
     "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
     "rating": { "rate": 2.1, "count": 430 },
-    "author": "Carlos Hernández"
+    "author": "Carlos Hernández",
+    "date": "2025-05-16"
   },
   {
     "id": 5,
@@ -47,7 +52,8 @@ export const blogData = [
     "category": "jewelery",
     "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
     "rating": { "rate": 4.6, "count": 400 },
-    "author": "Emma Dubois"
+    "author": "Emma Dubois",
+    "date": "2025-05-15"
   },
   {
     "id": 6,
@@ -57,7 +63,8 @@ export const blogData = [
     "category": "jewelery",
     "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
     "rating": { "rate": 3.9, "count": 70 },
-    "author": "Noah Jensen"
+    "author": "Noah Jensen",
+    "date": "2025-05-14"
   },
   {
     "id": 7,
@@ -67,7 +74,8 @@ export const blogData = [
     "category": "jewelery",
     "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
     "rating": { "rate": 3, "count": 400 },
-    "author": "Chloe Moretti"
+    "author": "Chloe Moretti",
+    "date": "2025-05-13"
   },
   {
     "id": 8,
@@ -77,7 +85,8 @@ export const blogData = [
     "category": "jewelery",
     "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
     "rating": { "rate": 1.9, "count": 100 },
-    "author": "Lucas Almeida"
+    "author": "Lucas Almeida",
+    "date": "2025-05-12"
   },
   {
     "id": 9,
@@ -87,7 +96,8 @@ export const blogData = [
     "category": "electronics",
     "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
     "rating": { "rate": 3.3, "count": 203 },
-    "author": "Sophie Nakamura"
+    "author": "Sophie Nakamura",
+    "date": "2025-05-11"
   },
   {
     "id": 10,
@@ -97,7 +107,8 @@ export const blogData = [
     "category": "electronics",
     "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
     "rating": { "rate": 2.9, "count": 470 },
-    "author": "Oliver Schmidt"
+    "author": "Oliver Schmidt",
+    "date": "2025-05-10"
   },
   {
     "id": 11,
@@ -107,7 +118,8 @@ export const blogData = [
     "category": "electronics",
     "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
     "rating": { "rate": 4.8, "count": 319 },
-    "author": "Mia Ivanov"
+    "author": "Mia Ivanov",
+    "date": "2025-05-09"
   },
   {
     "id": 12,
@@ -117,7 +129,8 @@ export const blogData = [
     "category": "electronics",
     "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
     "rating": { "rate": 4.8, "count": 400 },
-    "author": "Yuki Tanaka"
+    "author": "Yuki Tanaka",
+    "date": "2025-05-08"
   },
   {
     "id": 13,
@@ -127,7 +140,8 @@ export const blogData = [
     "category": "electronics",
     "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
     "rating": { "rate": 2.9, "count": 250 },
-    "author": "Gabriel Svensson"
+    "author": "Gabriel Svensson",
+    "date": "2025-05-07"
   },
   {
     "id": 14,
@@ -137,7 +151,8 @@ export const blogData = [
     "category": "electronics",
     "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
     "rating": { "rate": 2.2, "count": 140 },
-    "author": "Amélie Lefèvre"
+    "author": "Amélie Lefèvre",
+    "date": "2025-05-06"
   },
   {
     "id": 15,
@@ -147,7 +162,8 @@ export const blogData = [
     "category": "women's clothing",
     "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
     "rating": { "rate": 2.6, "count": 235 },
-    "author": "Elena Petrova"
+    "author": "Elena Petrova",
+    "date": "2025-05-05"
   },
   {
     "id": 16,
@@ -157,7 +173,8 @@ export const blogData = [
     "category": "women's clothing",
     "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
     "rating": { "rate": 2.9, "count": 340 },
-    "author": "Hanna Novak"
+    "author": "Hanna Novak",
+    "date": "2025-05-04"
   },
   {
     "id": 17,
@@ -167,7 +184,8 @@ export const blogData = [
     "category": "women's clothing",
     "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
     "rating": { "rate": 3.8, "count": 679 },
-    "author": "Natalie Krüger"
+    "author": "Natalie Krüger",
+    "date": "2025-05-03"
   },
   {
     "id": 18,
@@ -177,7 +195,8 @@ export const blogData = [
     "category": "women's clothing",
     "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
     "rating": { "rate": 4.7, "count": 130 },
-    "author": "Zara Dimitrova"
+    "author": "Zara Dimitrova",
+    "date": "2025-05-02"
   },
   {
     "id": 19,
@@ -187,7 +206,8 @@ export const blogData = [
     "category": "women's clothing",
     "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
     "rating": { "rate": 4.5, "count": 146 },
-    "author": "Maria Kowalska"
+    "author": "Maria Kowalska",
+    "date": "2025-05-02"
   },
   {
     "id": 20,
@@ -197,6 +217,7 @@ export const blogData = [
     "category": "women's clothing",
     "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
     "rating": { "rate": 3.6, "count": 145 },
-    "author": "Jasmine Chen"
+    "author": "Jasmine Chen",
+    "date": "2025-05-01"
   }
 ];

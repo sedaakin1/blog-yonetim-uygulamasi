@@ -8,10 +8,15 @@ function App() {
   const [blogs, setBlogs] = useState(blogData);
 
   return (
-    <div className="app-container">
-      <AddNewBlog setBlog={setBlogs} />
-      <BlogList blogs={blogs} />
-    </div>
+     <>
+      <header className="app-header">
+        <h1>Blog Management App</h1>
+      </header>
+      <div className="app-container">
+        <AddNewBlog setBlog={setBlogs} />
+        <BlogList blogs={blogs} />
+      </div>
+    </>
   );
 }
 export default App
